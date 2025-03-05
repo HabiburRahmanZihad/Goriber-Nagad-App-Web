@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goriber Nagad App</title>
+
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- DaisyUi and Tailwind Css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d5b89be9d.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Css for Font -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .inter {
+                font-family: "Inter", sans-serif;
+            }
+        }
+      </style>
+</head>
+
+<body class="inter p-2">
+    <!-- Header section -->
+    <header class="max-w-[300px] mx-auto">
+        <div class="mt-20 space-y-4">
+            <div class="max-w-[125px] mx-auto space-y-3">
+                <img class="w-full mx-auto" src="assets/Nagad.png" alt="">
+                <img class="w-full mx-auto" src="assets/nagadBangla.png" alt="">
+            </div>
+            <h1 class="text-2xl font-semibold text-center">Welcome</h1>
+        </div>
+
+
+        <section class="mt-16">
+            <form class="space-y-4 flex flex-col items-center justify-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-phone text-[#EC1C24]"></i>
+                    <input id="number" type="number" value="01800000000" placeholder="Mobile Number"
+                        class="w-full p-2  border-b border-[#EC1C24]">
+                </div>
+
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-lock text-[#EC1C24]"></i>
+                    <input id="pin" type="password" placeholder="Pin" class="w-full p-2  border-b border-[#EC1C24]">
+                </div>
+
+                <button id="login-btn"
+                    class="btn w-3/4 mx-auto p-2 mt-4 rounded-full bg-[#EC1C24] text-white font-medium">LOGIN</button>
+            </form>
+            <p class="text-center text-gray-400 pt-4">Forgot PIN?</p>
+        </section>
+    </header>
+
+    <!-- Footer section -->
+    <footer class="max-w-[300px] mx-auto mt-20">
+        <div id="cards" class="grid grid-cols-3 gap-2  ">
+
+            <div class="flex flex-col items-center space-y-2 p-2">
+                <div class="max-w-[30px]">
+                    <img class="w-full" src="assets/location.png" alt="">
+                </div>
+                <a href="#" class="text-center text-[#969696] text-xs">Store Locator</a>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2 p-2">
+                <div class="max-w-[30px]">
+                    <img class="w-full" src="assets/offer.png" alt="">
+                </div>
+                <a href="#" class="text-center text-[#969696] text-xs">Offers</a>
+            </div>
+
+            <div class="flex flex-col items-center space-y-2 p-2">
+                <div class="max-w-[30px]">
+                    <img class="w-full" src="assets/help.png" alt="">
+                </div>
+                <a href="#" class="text-center text-[#969696] text-xs">Help</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Custom Js -->
+    <script src="scripts/login.js"></script>
+    <script src="scripts/utilities.js"></script>
+</body>
+
+</html>
