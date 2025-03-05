@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- DaisyUi and Tailwind Css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d5b89be9d.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Css for Font -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .inter {
+                font-family: "Inter", sans-serif;
+            }
+        }
+      </style>
+</head>
+
+<body class="inter">
+
+    <header class="bg-[#EC1C24] max-w-[300px] mx-auto">
+        <div id="backHome" class="text-white text-left text-lg font-semibold relative top-16 left-6">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div>
+            <p class="text-white text-center text-lg font-semibold pt-8 pb-4">Registration</p>
+        </div>
+    </header>
+
+
+    <main class="max-w-[300px] mx-auto">
+        <div>
+            <div class="mt-8 max-w-[86px] mx-auto">
+                <img class="w-full" src="assets/forgetPin.png" alt="">
+            </div>
+            <p class="text-xl font-medium text-center pt-4">Set Nagad PIN</p>
+        </div>
+
+
+
+        <section class="mt-16">
+            <form class="space-y-6 flex flex-col items-center justify-center">
+                <div class="flex items-center space-x-2 w-3/4 mx-auto">
+                    <i class="fa-solid fa-lock text-[#EC1C24]"></i>
+                    <input type="password" placeholder="Pin" class="w-full p-2  border-b border-[#EC1C24]">
+                </div>
+
+                <div class="flex items-center space-x-2 w-3/4 mx-auto">
+                    <i class="fa-solid fa-lock text-[#EC1C24]"></i>
+                    <input type="password" placeholder="Retype PIN" class="w-full p-2  border-b border-[#EC1C24]">
+                </div>
+
+                <button
+                    class="btn w-3/4 mx-auto p-2 mt-4 rounded-full bg-[#EC1C24] text-white font-medium">SUBMIT</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts/backhome.js"></script>
+</body>
+
+</html>

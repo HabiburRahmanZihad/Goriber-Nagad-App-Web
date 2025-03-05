@@ -19,9 +19,10 @@ loginBtn.addEventListener('click', function (event) {
     }
 });
 
-let cards = document.getElementById('cards');
-cards.addEventListener('click', function (event) {
+let forgetPin = document.getElementById('forgotPin');
+forgetPin.addEventListener('click', function (event) {
     event.preventDefault();
+    window.location.href = 'registration.html';
 });
 
 
