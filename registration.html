@@ -32,9 +32,9 @@
 
 <body class="inter">
 
-    <header class="bg-[#EC1C24] max-w-[300px] mx-auto">
-        <div id="backHome" class="text-white text-left text-lg font-semibold relative top-16 left-6">
-            <i class="fa-solid fa-arrow-left"></i>
+    <header class="bg-[#EC1C24] max-w-[425px] mx-auto">
+        <div class="text-white text-left text-lg font-semibold relative top-16 left-6">
+            <i id="backHome" class="fa-solid fa-arrow-left"></i>
         </div>
         <div>
             <p class="text-white text-center text-lg font-semibold pt-8 pb-4">Registration</p>
@@ -42,7 +42,7 @@
     </header>
 
 
-    <main class="max-w-[300px] mx-auto">
+    <main class="max-w-[425px] mx-auto">
         <div>
             <div class="mt-8 max-w-[86px] mx-auto">
                 <img class="w-full" src="assets/forgetPin.png" alt="">
@@ -56,16 +56,18 @@
             <form class="space-y-6 flex flex-col items-center justify-center">
                 <div class="flex items-center space-x-2 w-3/4 mx-auto">
                     <i class="fa-solid fa-lock text-[#EC1C24]"></i>
-                    <input type="password" placeholder="Pin" class="w-full p-2  border-b border-[#EC1C24]">
+                    <input id="forget-pin" type="password" placeholder="Pin"
+                        class="w-full p-2  border-b border-[#EC1C24]">
                 </div>
 
                 <div class="flex items-center space-x-2 w-3/4 mx-auto">
                     <i class="fa-solid fa-lock text-[#EC1C24]"></i>
-                    <input type="password" placeholder="Retype PIN" class="w-full p-2  border-b border-[#EC1C24]">
+                    <input id="forget-pin-retype" type="password" placeholder="Retype PIN"
+                        class="w-full p-2  border-b border-[#EC1C24]">
                 </div>
 
-                <button
-                    class="btn w-3/4 mx-auto p-2 mt-4 rounded-full bg-[#EC1C24] text-white font-medium">SUBMIT</button>
+                <button id="submit-btn"
+                    class=" btn w-3/4 mx-auto p-2 mt-4 rounded-full bg-[#EC1C24] text-white font-medium">SUBMIT</button>
             </form>
         </section>
     </main>

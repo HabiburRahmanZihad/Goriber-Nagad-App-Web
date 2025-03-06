@@ -25,4 +25,10 @@ forgetPin.addEventListener('click', function (event) {
     window.location.href = 'registration.html';
 });
 
-
+let allCards = document.getElementById('cards');
+allCards.addEventListener('click', function (event) {
+    event.preventDefault();
+    if (event.target.tagName === 'A') {
+        alert('Work in Progress');
+    }
+});
