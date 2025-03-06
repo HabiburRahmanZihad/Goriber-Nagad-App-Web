@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Money</title>
+
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- DaisyUi and Tailwind Css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d5b89be9d.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Css for Font -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .inter {
+                font-family: "Inter", sans-serif;
+            }
+        }
+      </style>
+</head>
+
+<body class="inter">
+
+    <header class="bg-[#EC1C24] max-w-[425px] mx-auto">
+        <div class="text-white text-left text-lg font-semibold relative top-16 left-6">
+            <i id="send-back-dash" class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div>
+            <p class="text-white text-center text-lg font-semibold pt-8 pb-4">Send Money</p>
+        </div>
+    </header>
+
+
+    <main class="max-w-[425px] mx-auto">
+
+        <section class="mt-16">
+            <form class="space-y-6 flex flex-col items-center justify-center">
+
+                <div class="flex items-center space-x-2 w-3/4 mx-auto">
+                    <i class="fa-solid fa-mobile text-[#EC1C24]"></i>
+                    <input id="mobileNumber" type="number" placeholder="Mobile Number"
+                        class="w-full p-2  border-b border-[#EC1C24]">
+                </div>
+
+                <div class="flex items-center space-x-2 w-3/4 mx-auto">
+                    <i class="fa-solid fa-sack-dollar text-[#EC1C24]"></i>
+                    <input id="amount" type="number" placeholder="Amount" class="w-full p-2  border-b border-[#EC1C24]">
+                </div>
+
+                <div class="flex items-center space-x-2 w-3/4 mx-auto">
+                    <i class="fa-solid fa-lock text-[#EC1C24]"></i>
+                    <input id="pin-input" type="password" placeholder="PIN"
+                        class="w-full p-2  border-b border-[#EC1C24]">
+                </div>
+
+                <button id="sendMoney-Confirm-btn"
+                    class=" btn w-3/4 mx-auto p-2 mt-4 rounded-full bg-[#EC1C24] text-white font-medium">TAP TO
+                    SEND</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts/sendBackDash.js"></script>
+    <script src="scripts/card1.js"></script>
+    <script src="scripts/utilities.js"></script>
+
+</body>
+
+</html>
